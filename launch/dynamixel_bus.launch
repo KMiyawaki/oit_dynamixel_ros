@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="oit_dynamixel_ros" type="dynamixel_bus" name="dynamixel_bus" output="screen" required="true">
+    <param name="port" value="/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_AI0282XE-if00-port0"/>
+    <param name="baud_rate" value="1000000"/>
+    <param name="process_rate" value="12.0"/>
+    <rosparam param="motor_id_range">[1, 10]</rosparam>
+  </node>
+</launch>

@@ -1,0 +1,6 @@
+<launch>
+  <include file="$(find oit_dynamixel_ros)/launch/dynamixel_bus.launch"/>
+  <node pkg="oit_dynamixel_ros" type="joint_controller" name="joint_controller" output="screen" required="true">
+    <rosparam command="load" file="$(find oit_dynamixel_ros)/config/joint.yaml"/>
+  </node>
+</launch>
