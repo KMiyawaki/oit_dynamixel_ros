@@ -34,12 +34,12 @@ def main():
                           JointTrajectory, queue_size=1)
     rospy.sleep(3)
 
-    msg = make_joint_trajectory(1, ['joint_0', 'joint_1'])
-    push_trajectory_point(msg, 3, [math.radians(90),
+    msg = make_joint_trajectory(1, ['right_arm_1', 'right_arm_2'])
+    push_trajectory_point(msg, 0.5, [math.radians(90),
                                    math.radians(-90)])
-    push_trajectory_point(msg, 3, [math.radians(-90),
+    push_trajectory_point(msg, 0.5, [math.radians(-90),
                                    math.radians(90)])
-    push_trajectory_point(msg, 3, [math.radians(0),
+    push_trajectory_point(msg, 0.5, [math.radians(0),
                                    math.radians(0)])
 
     rospy.loginfo("Sending trajectory")

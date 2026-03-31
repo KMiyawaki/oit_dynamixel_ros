@@ -1,7 +1,10 @@
 process_rate: 100.0
-joint_0:
-  ID: 1
-  max_velocity: deg(450)
-joint_1:
-  ID: 2
+right_arm_1:
+  id: 1
   max_velocity: deg(270)
+right_arm_2:
+  id: 2
+  max_velocity: deg(270)
+#joint_2:
+#  id: 3
+#  max_velocity: deg(270)
